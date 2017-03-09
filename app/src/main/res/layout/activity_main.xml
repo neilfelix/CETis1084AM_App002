@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.edu.cetis108.cetis1084am_app002.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:id="@+id/lblResult"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtNum1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:hint="Número 1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtNum2"
+        android:layout_below="@+id/txtNum1"
+        android:layout_alignStart="@+id/txtNum1"
+        android:layout_marginTop="11dp"
+        android:textAlignment="center"
+        android:hint="Número 2" />
+
+    <Button
+        android:text="Sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnOperar_click"
+        android:id="@+id/btnSuma"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/lblResult"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnOperar_click"
+        android:id="@+id/btnDividir"
+        android:layout_alignBaseline="@+id/btnMultiplicar"
+        android:layout_alignBottom="@+id/btnMultiplicar"
+        android:layout_alignStart="@+id/btnSuma" />
+
+    <Button
+        android:text="Multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnOperar_click"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnMultiplicar"
+        android:layout_below="@+id/btnResta"
+        android:layout_alignStart="@+id/btnResta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnOperar_click"
+        android:id="@+id/btnResta"
+        android:text="Restar"
+        android:layout_alignBaseline="@+id/btnSuma"
+        android:layout_alignBottom="@+id/btnSuma"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp" />
+
+</RelativeLayout>
